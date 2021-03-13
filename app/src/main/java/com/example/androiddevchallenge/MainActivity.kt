@@ -20,8 +20,9 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
@@ -39,8 +40,14 @@ class MainActivity : AppCompatActivity() {
 // Start building your app here!
 @Composable
 fun MyApp() {
+    val (screen, setScreen) = remember { mutableStateOf(Screen.Welcome) }
+
     Surface(color = MaterialTheme.colors.background) {
-        Text(text = "Ready... Set... GO!")
+        when (screen) {
+            Screen.Welcome -> WelcomeScreen(navigateTo = setScreen)
+            Screen.Login -> LoginScreen(navigateTo = setScreen)
+            Screen.Home -> HomeScreen()
+        }
     }
 }
 
@@ -58,4 +65,9 @@ fun DarkPreview() {
     MyTheme(darkTheme = true) {
         MyApp()
     }
+}
+
+
+enum class Screen {
+    Welcome, Login, Home
 }
