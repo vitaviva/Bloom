@@ -1,15 +1,15 @@
-# Put title of your app here
+# Bloom
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/vitaviva/Bloom/Check/badge.svg)
+![Workflow result](https://github.com/vitaviva/Bloom/workflows/Check/badge.svg)
 ![](https://img.shields.io/badge/jetpack_compose-1.0.0_beta01-green.svg)
 
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-This project is built in Jetpack Compose which including 3 screens：Welcome, Login, Home<br/>
-see [#AndroidDevChallenge Week3](https://android-developers.googleblog.com/2021/03/android-dev-challenge-3.html)
+This app is built in Jetpack Compose which including 3 screens：Welcome, Login and Home<br/>
+for more information, please see [#AndroidDevChallenge Week3](https://android-developers.googleblog.com/2021/03/android-dev-challenge-3.html)
 
 <img src="/results/screenrecord.gif" width="260">
 
@@ -21,7 +21,7 @@ Some show cases of usage of Compose UI APIs，such as Theme, Layout, Modifier et
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 <img src="/results/screenshot_1.png" width="200">&emsp;<img src="/results/screenshot_2.png" width="200">&emsp;<img src="/results/screenshot_3.png" width="200">
-<img src="/results/screenshot_4.png" width="200">&emsp;<img src="/results/screenshot_5.png" width="200">&emsp;<img src="/results/screenshot_6.png" width="200">
+<br/> <img src="/results/screenshot_4.png" width="200">&emsp;<img src="/results/screenshot_5.png" width="200">&emsp;<img src="/results/screenshot_6.png" width="200">
 ## License
 ```
 Copyright 2020 The Android Open Source Project

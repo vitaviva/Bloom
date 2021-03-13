@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge
 
 import androidx.compose.foundation.Image
@@ -91,7 +106,6 @@ fun HomeScreen(
                 )
             }
 
-
             LazyRow(modifier = Modifier.padding(top = 8.dp)) {
                 items(rowData.size) {
                     RowItem(
@@ -146,12 +160,8 @@ fun HomeScreen(
                     )
                 }
             }
-
         }
-
     }
-
-
 }
 
 @Composable
@@ -179,16 +189,16 @@ fun RowItem(modifier: Modifier, itemInfo: ItemInfo) {
                     .align(Alignment.BottomStart)
                     .padding(start = 16.dp, top = 8.dp, bottom = 8.dp)
             )
-
         }
-
     }
 }
 
 @Composable
 fun ColumnItem(
-    modifier: Modifier, itemInfo: ItemInfo,
-    checked: Boolean, onCheckedChange: (Boolean) -> Unit
+    modifier: Modifier,
+    itemInfo: ItemInfo,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit
 ) {
     Row(modifier.height(64.dp)) {
 
@@ -226,10 +236,8 @@ fun ColumnItem(
 
             Divider(modifier = Modifier.align(Alignment.BottomStart))
         }
-
     }
 }
-
 
 @Composable
 fun BottomNavigation() {
@@ -263,7 +271,6 @@ fun PreviewHomeLight() {
     MyTheme(darkTheme = false) {
         Surface(color = MaterialTheme.colors.background) {
             HomeScreen(darkTheme = false)
-
         }
     }
 }
@@ -278,4 +285,3 @@ fun PreviewHomeDark() {
         }
     }
 }
-

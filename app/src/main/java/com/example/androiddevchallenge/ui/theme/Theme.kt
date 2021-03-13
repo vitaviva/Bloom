@@ -20,14 +20,6 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.ProvidedValue
-import androidx.compose.runtime.compositionLocalOf
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.androiddevchallenge.R
-import java.security.Provider
-
 
 private val DarkColorPalette = darkColors(
     primary = green900,
