@@ -129,7 +129,7 @@ fun WelcomeScreen(darkTheme: Boolean = isSystemInDarkTheme(), navigateTo: (Scree
 }
 
 
-@Preview
+@Preview(widthDp = 360, heightDp = 640)
 @Composable
 fun PreviewWelcomeLight() {
 
@@ -140,7 +140,7 @@ fun PreviewWelcomeLight() {
     }
 }
 
-@Preview
+@Preview(widthDp = 360, heightDp = 640)
 @Composable
 fun PreviewWelcomeDark() {
 

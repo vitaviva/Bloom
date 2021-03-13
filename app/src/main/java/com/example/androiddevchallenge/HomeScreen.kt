@@ -256,7 +256,7 @@ fun BottomNavigation() {
     }
 }
 
-@Preview
+@Preview(widthDp = 360, heightDp = 640)
 @Composable
 fun PreviewHomeLight() {
 
@@ -268,7 +268,7 @@ fun PreviewHomeLight() {
     }
 }
 
-@Preview
+@Preview(widthDp = 360, heightDp = 640)
 @Composable
 fun PreviewHomeDark() {
 

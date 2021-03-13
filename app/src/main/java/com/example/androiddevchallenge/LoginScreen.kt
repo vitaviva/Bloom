@@ -94,7 +94,7 @@ fun LoginScreen(
 }
 
 
-@Preview
+@Preview(widthDp = 360, heightDp = 640)
 @Composable
 fun PreviewLoginLight() {
 
@@ -106,7 +106,7 @@ fun PreviewLoginLight() {
     }
 }
 
-@Preview
+@Preview(widthDp = 360, heightDp = 640)
 @Composable
 fun PreviewLoginDark() {
 
